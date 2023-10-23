@@ -110,7 +110,7 @@ describe('Links Services', () => {
 
       const result = await linksServices.scrapeLink('https://example.com/page1', linkId);
 
-      expect(result).to.equal(1); // Number of links found in the mocked HTML
+      expect(result).to.equal(1); 
     });
 
     it('should handle errors during link scraping', async () => {

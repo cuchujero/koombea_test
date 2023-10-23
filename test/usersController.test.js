@@ -154,7 +154,7 @@ it('should return 200 and "user created" when user does not exist', async () => 
       findOneStub.returns({
         id: 1,
         userName: 'testuser',
-        password: bcrypt.hashSync('correctpassword', 10), // Correct password
+        password: bcrypt.hashSync('correctpassword', 10),  
         type: 'normal',
         created_at: moment.utc(),
         updated_at: moment.utc(),

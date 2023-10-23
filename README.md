@@ -23,6 +23,7 @@ A user can sing up, login and see all the websites stored.
 ## env file
 
 TEST_DB_USERNAME=jero12345
+
 TEST_DB_PASSWORD=Arturo123!
 TEST_DB_DATABASE=jero12345_userscrapper
 TEST_DB_HOST=mysql-jero12345.alwaysdata.net

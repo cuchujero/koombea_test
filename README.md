@@ -53,10 +53,10 @@ http://localhost:3000/detail --> User website detail (login needed)
 
 ## Dependencies
 
-axios
-bcrypt
-chai
-cheerio
+axios 
+bcrypt 
+chai 
+cheerio 
 cors
 dotenv
 express
@@ -76,6 +76,7 @@ sinon
 ## Documentation 
 
 Database script
+
 Api documentation
 
 

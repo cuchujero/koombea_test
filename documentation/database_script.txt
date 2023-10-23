@@ -1,0 +1,55 @@
+-- ---
+-- Tables
+-- ---
+
+-- ---
+-- Table User
+-- ---
+DROP TABLE IF EXISTS User;
+
+
+CREATE TABLE User (
+  id INT NOT NULL AUTO_INCREMENT,
+  userName VARCHAR(30) NOT NULL,
+  password VARCHAR(150) NOT NULL,
+  type ENUM('normal') DEFAULT 'normal', 
+  created_at DATETIME NOT NULL,
+  updated_at DATETIME NOT NULL,
+  deleted_at DATETIME NULL,
+  PRIMARY KEY (id)
+);
+
+
+-- ---
+-- Table Link
+-- ---
+
+DROP TABLE IF EXISTS Link;
+		
+CREATE TABLE Link(
+  id INTEGER NOT NULL AUTO_INCREMENT,
+  url VARCHAR(200) NOT NULL,
+  created_at DATETIME NOT NULL,
+  User_id INTEGER NOT NULL,
+  PRIMARY KEY (id)
+);
+
+
+DROP TABLE IF EXISTS LinkScrapper;
+		
+CREATE TABLE LinkScrapper(
+  id INTEGER NOT NULL AUTO_INCREMENT,
+  urlScrapped VARCHAR(200) NOT NULL,
+  urlReference VARCHAR(50) NOT NULL,
+  Link_id INTEGER NOT NULL,
+  PRIMARY KEY (id)
+);
+
+
+-- ---
+-- Foreign Keys 
+-- ---
+
+ALTER TABLE Link ADD FOREIGN KEY (User_id) REFERENCES User(id);
+ALTER TABLE LinkScrapper ADD FOREIGN KEY (Link_id) REFERENCES Link(id);
+

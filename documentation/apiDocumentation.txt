@@ -1,0 +1,13 @@
+Users 
+/users (GET) --> Get User/s Data
+/users (POST) --> Create User
+/users (PUT) --> Modify User Data
+/users (DELETE) --> Delete User
+/users/login (POST) --> Verify User Data for access to home
+/users/recoverPassword (POST) --> Reset User Password
+
+Links
+/links (GET) --> Get Link/s Data
+/links (POST) --> Create Link
+/links (PUT) --> Modify Link Data
+/links (DELETE) --> Delete Link

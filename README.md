@@ -86,3 +86,5 @@ Bearer Token Authorization: The implementation of bearer token authorization for
 Enhanced API Documentation: There is a need to enhance, complete and formalize the API documentation. It should provide more comprehensive and structured information.
 
 URL Separation: Today is does not distinguish between different types of URLs in the documentation. For example, separating "javascript:void(0)" and "/pathfinder/pathfinder_talent.php" from other types of URLs. in the requirements is was not describe.
+
+User a frontend framework and avoid show critical data in the frontend (like bearer token) and archive a more organized code.
